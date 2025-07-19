@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <style>
+        .banner {
+            position: relative;
+            z-index: 10;
+            height: 300px;
+            width: 1908px;
+            background-color: red;
+            left: 0px;
+        }
+
+        .b1 {
+            position: relative;
+            z-index: 30;
+            color: #e63946;
+            top: 570px;
+            left: 30px;
+            font-size: 50px;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+
+        }
+        .b2 {
+            
+            position: relative;
+            z-index: 30;
+            color: #e63946;
+            top: 80px;
+            left: 30px;
+            font-size: 38px;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+
+        
+        }
+
+
+        .linha-decorativa {
+            position: relative[];
+            z-index: 1;
+            width: 300px;
+            height: 4px;
+            background-color: #e63946;
+            border-radius: 2px;
+            margin: 12px auto 0;
+            left: -790px;
+            top: -10px;
+        }
+
+        .linha-decorativa2 {
+            position: relative;
+            z-index: 1;
+            width: 320px;
+            height: 4px;
+            background-color: #e63946;
+            border-radius: 2px;
+            margin: 12px auto 0;
+            left: -785px;
+            top: -46px;
+        }
+        .h2{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #964B00;
+            margin-top: -1px;
+        }
+        .h3{
+            position: relative;
+            z-index: 450;
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #FF99AA;
+            margin-top: -1px;
+        }
+        .h4{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #D2691E;
+            margin-top: -1px;
+        }
+        .h5{
+             font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #FFD966;
+            margin-top: -1px;
+        }
+        .h6{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #C68642;
+            margin-top: -1px;
+        }
+        .h7{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #FFCC00;
+            margin-top: -1px;
+        }
+        .h8{
+           font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #D2A679;
+            margin-top: -1px; 
+        }
+        .h9{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #5C4033;
+            margin-top: -1px; 
+        }
+        .h10{ /*Começo pão de mel*/
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #795548;
+            margin-top: -1px; 
+        }
+        .h11{
+           font-family: 'Lobster', cursive;
+            font-size: 30px;
+            color: #4B2E2B;
+            margin-top: -1px;  
+        } 
+        
+        .p{
+            margin-top: -16px;
+        }
+        .pd{
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            margin-top: 70px;
+            margin-left: -60px;
+
+        }
+        .est{
+            margin-top: -100px;
+        }
+
+        .bolo1 {
+            position: relative;
+            z-index: 20;
+            width: 398px;
+            height: 490px;
+            margin-top: 600px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 30px;
+
+
+        }
+
+        .img1 {
+            position: relative;
+            z-index: 120;
+            border-radius: 20px;
+            margin-top: 2px;
+            width: 390px;
+        }
+
+        .bolo2 {
+            position: relative;
+            z-index: 370;
+            width: 398px;
+            height: 490px;
+            margin-top: -492px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 508px;
+
+
+        }
+
+        .bolo3 {
+            position: relative;
+            z-index: 80;
+            width: 398px;
+            height: 490px;
+            margin-top: -491px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 990px;
+
+
+        }
+
+        .bolo4 {
+            position: relative;
+            z-index: 100;
+            width: 398px;
+            height: 490px;
+            margin-top: -491px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 1470px;
+
+
+        }
+        .bolo5 {
+            position: relative;
+            z-index: 20;
+            width: 398px;
+            height: 490px;
+            margin-top: 100px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 30px;
+        }
+        .bolo6 {
+            position: relative;
+            z-index: 370;
+            width: 398px;
+            height: 490px;
+            margin-top: -492px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 508px;
+
+
+        }
+         .bolo7 {
+            position: relative;
+            z-index: 80;
+            width: 398px;
+            height: 490px;
+            margin-top: -491px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 990px;
+
+
+        }
+        .bolo8 {
+            position: relative;
+            z-index: 100;
+            width: 398px;
+            height: 490px;
+            margin-top: -491px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 1470px;
+
+
+        }
+        .carrinho{
+            position: relative;
+            z-index: 210;
+            margin-top: 13px;
+            left: 230px;
+            cursor: pointer;
+
+        }
+        .car{
+            position: relative;
+            z-index: 200;
+            height: 30px;
+            width: 40px;
+            background-color: red;
+            top: -34px;
+            left: 225px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .img2{
+           position: relative;
+           z-index: 400;
+           
+           border-radius: 20px;
+           top: 2px;
+           height: 260px;
+        }
+
+        .pao1 {
+            position: relative;
+            z-index: 20;
+            width: 398px;
+            height: 490px;
+            margin-top: 110px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 30px;
+        }
+        .pao2 {
+            position: relative;
+            z-index: 370;
+            width: 398px;
+            height: 490px;
+            margin-top: -492px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 508px;
+        }
+        .pao3 {
+            position: relative;
+            z-index: 80;
+            width: 398px;
+            height: 490px;
+            margin-top: -491px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            left: 990px;
+        }
+       
+
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: black;">Bem vindo, visitante</h1><!-- Não esquecer de colocar a função aqui-->
+    </header>
+    <main>
+        <div class="banner">
+            <img src="Bolo de Pote - melhor.png" alt="">
+        </div>
+        <h1 class="b1"><em>Bolos de Pote</em>
+            <div class="linha-decorativa"></div>
+        </h1>
+        <div class="bolo1">
+            <center><img src="bolo-de-pote.jpg" alt="" width="390px" class="img1">
+            <h2 class="h2">Bolo de Chocolate</h2>
+            <p class="p">Camadas perfeitas de bolo de chocolate fofinho com um recheio cremoso e irresistível. Uma sobremesa feita para conquistar seu paladar! 🍫❤️</p>
+            <p class="pd"><strong>R$12,00</strong></p>
+            <p class="est">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho">
+            <div class="car"></div>
+        </div>
+        <div class="bolo2">
+            <center><img src="3_613ff04f6d1b4.jpg" alt="" class="img2" width="390px">
+                <h2 class="h3" style="margin-top: 5px;">Bolo de Ninho C/ Morango</h2>
+                <p class="p" >Creme de leite Ninho com morangos frescos e massa fofinha. Uma combinação leve, doce e irresistível! 🍓✨</p>
+            <p class="pd" style="margin-top: 80px;"><strong>R$12,00</strong></p>
+            <p class="est">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho">
+            <div class="car"></div>
+        </div>
+        
+        <div class="bolo3">
+            <center><img src="d297d6cd9336aff60d0a0ad40e621320.avif" alt="" class="img2" width="390px">
+                <h2 class="h4" style="margin-top: 5px;">Bolo de Pretígio</h2>
+                <p class="p" >Bolo de prestígio com recheio cremoso de coco e cobertura deliciosa. O sabor clássico do prestígio em cada colherada! 🥥🍫</p>
+            <p class="pd" style="margin-top: 62px;"><strong>R$12,00</strong></p>
+            <p class="est">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho">
+            <div class="car"></div>
+        </div>  
+        
+        <div class="bolo4">
+            <center><img src="abacaxi.png" alt="" class="img2" width="390px">
+            <h2 class="h5" style="margin-top: 5px;">Bolo de Abacaxi C/ Ninho</h2>
+            <p class="p" >Massa leve com creme de leite Ninho e pedaços suculentos de abacaxi. Um sabor tropical e doce na medida certa! 🍍🥄✨</p>
+            <p class="pd" style="margin-top: 62px;"><strong>R$12,00</strong></p>
+            <p class="est">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho">
+            <div class="car"></div>
+          
+        </div>
+        <div class="bolo5">
+            <center><img src="doce lete.png" alt="" width="390px" class="img1">
+            <h2 class="h6">Bolo de Doce de Leite</h2>
+            <p class="p">Camadas de bolo macio com um recheio generoso de doce <br> de  leite cremoso. Simples, clássico e delicioso! 🍯✨</p>
+            <p class="pd"><strong>R$12,00</strong></p>
+            <p class="est">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho">
+            <div class="car"></div>
+        </div>
+        </div>
+        <div class="bolo6">
+            <center><img src="maracuja.png" alt="" width="390px" class="img1">
+            <h2 class="h7">Bolo de Maracujá</h2>
+            <p class="p">Massa fofinha com um creme leve e marcante de maracujá, trazendo o equilíbrio ideal entre o doce e o azedinho. Refrescante e irresistível! 🍰🍈✨</p>
+            <p class="pd" style="margin-top: 50px;"><strong>R$12,00</strong></p>
+            <p class="est" style="position: relative; z-index: 340; margin-top: -90px;">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho" style="margin-top: 1px;">
+            <div class="car"></div>
+        </div>
+        </div>
+        
+        
+        </div>
+        <div class="bolo7">
+            <center><img src="paçoca.avif" alt="" width="390px" class="img1">
+            <h2 class="h8">Bolo de Paçoca</h2>
+            <p class="p">Bolo macio com creme de paçoca e pedacinhos crocantes no meio. Um sabor típico, doce e cheio de carinho em cada colherada! 🥜✨</p>
+            <p class="pd" style="margin-top: 50px;"><strong>R$12,00</strong></p>
+            <p class="est" style="position: relative; z-index: 340; margin-top: -90px;">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho" style="margin-top: 1px;">
+            <div class="car"></div>
+        </div>
+        </div>
+        <div class="bolo8">
+            <center><img src="nutttela.avif" alt="" width="390px" class="img1">
+            <h2 class="h9">Bolo de Nuttela</h2>
+            <p class="p">Camadas de bolo fofinho com recheio cremoso de Nutella. Um sabor intenso e marcante que derrete na boca! 🍫✨</p>
+            <p class="pd" style="margin-top: 50px;"><strong>R$12,00</strong></p>
+            <p class="est" style="position: relative; z-index: 340; margin-top: -90px;">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho" style="margin-top: 1px;">
+            <div class="car"></div>
+        </div>
+        </div>
+    </main>
+    <header>
+        <img src="Pao de mel.png" alt="" style="margin-top: 180px;">
+    </header>
+    <main>
+        <div class="b2"><h2> <em>Pães De Mel</em></h2>
+        <div class="linha-decorativa2"></div></div>
+        
+        
+        <div class="pao1">
+            <center><img src="Pao de mel-melhorado.png" alt="" width="390px" class="img1">
+            <h2 class="h8">Doce de Leite</h2>
+            <p class="p">Pão de mel macio recheado com doce de leite cremoso. Um clássico cheio de sabor e carinho em cada mordida! 🍯🍫✨</p>
+            <p class="pd" style="margin-top: 50px;"><strong>R$8,00</strong></p>
+            <p class="est" style="position: relative; z-index: 340; margin-top: -90px;">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho" style="margin-top: 1px;">
+            <div class="car"></div>
+        </div>
+        </div>
+        <div class="pao2">
+            <center><img src="Pao de mel prest.jpeg" alt="" width="300px" class="img1" style="height: 280px;">
+            <h2 class="h10">Prestígio</h2>
+            <p class="p">Pão de mel macio com recheio cremoso de coco e cobertura de chocolate. O sabor do prestígio em uma versão ainda mais especial! 🥥🍫✨</p>
+            <p class="pd" style="margin-top: 50px;"><strong>R$8,00</strong></p>
+            <p class="est" style="position: relative; z-index: 340; margin-top: -90px;">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho" style="margin-top: 1px;">
+            <div class="car"></div>
+        </div>
+            
+        </div>
+        <div class="pao3">
+            <center><img src="de chocolate.png" alt="" width="300px" class="img1" style="height: 280px;">
+            <h2 class="h11">Brigadeiro</h2>
+            <p class="p">Pão de mel fofinho com recheio e cobertura de chocolate. Uma explosão de sabor para os amantes de chocolate! 🍫✨</p>
+            <p class="pd" style="margin-top: 50px;"><strong>R$8,00</strong></p>
+            <p class="est" style="position: relative; z-index: 340; margin-top: -90px;">⭐⭐⭐⭐⭐ (10+)</p></center>
+            <img src="carrinho-branco.png" alt="" width="30px" class="carrinho" style="margin-top: 1px;">
+            <div class="car"></div>
+        </div>
+        
+    </main>
+</body>
+
+</html>
