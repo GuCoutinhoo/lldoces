@@ -2,157 +2,203 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L&L Doces Gourmet</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Hammersmith+One&family=Montserrat:wght@400;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L&L Doces Gourmet</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400&family=Hammersmith+One&family=Montserrat:wght@400;600&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: "Montserrat", sans-serif;
-            background-color: #fff;
-        }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
 
-        header {
-            background-color: #d828282f;
-            padding: 20px;
-            width: 100%;
-            position: relative;
-            z-index: 10;
-            text-align: center;
-        }
+    body {
+      background-image: url('Fundo Confeitaria 2 melhorado.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-        .logo {
-            margin: 20px 0;
-            max-width: 90%;
-        }
+    /* HEADER */
+    header {
+      padding: 1px;
+      width: 100%;
+      z-index: 10;
+      position: relative;
+      background-color: rgba(216, 40, 40, 0.2);
+}
 
-        h1 {
-            font-size: 20px;
-            font-family: "Archivo Narrow", sans-serif;
-            font-weight: 400;
-            color: white;
-        }
+    /* ÍCONES REDES SOCIAIS */
+    .insta {
+      margin-top: 25px;
+    }
 
-        .conf {
-            font-family: "Hammersmith One", sans-serif;
-            color: white;
-            margin-top: 5px;
-        }
+    .face {
+      margin-top: -29px;
+      margin-left: 60px;
+    }
 
-        .gal {
-            font-weight: 400;
-            color: white;
-            font-size: 28px;
-            margin-top: 5px;
-        }
+    .zap {
+      margin-top: -27px;
+      margin-left: 120px;
+    }
 
-        .botao1 {
-            background-color: #d82828;
-            color: white;
-            width: 150px;
-            height: 36px;
-            border-radius: 60px;
-            border: none;
-            font-size: 15px;
-            font-weight: 600;
-            margin-top: 10px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
+    /* TEXTO */
+    h1 {
+      margin-top: -28px;
+      font-size: 20px;
+      font-family: "Archivo Narrow", sans-serif;
+      font-weight: 400;
+      color: white;
+    }
 
-        .botao1:active {
-            transform: scale(0.9);
-        }
+    .sobre {
+      margin-left: 1710px;
+      margin-top: -42px;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+    }
 
-        .redes {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 10px;
-        }
+    .mim {
+      position: relative;
+      top: -41px;
+      left: 1830px;
+      z-index: 20;
+    }
 
-        .redes img {
-            width: 25px;
-        }
+    .logo {
+      margin-top: 50px;
+    }
 
-        .sobre {
-            color: white;
-            font-size: 18px;
-            margin-top: 10px;
-        }
+    .conf {
+      font-family: "Hammersmith One", sans-serif;
+      margin-top: -30px;
+      color: white;
+    }
 
-        .imagem img {
-            width: 100vw;
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+    .gal {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: white;
+      font-size: 38px;
+      margin-top: -15px;
+    }
 
-        main {
-            margin-top: 10px;
-            z-index: 5;
-        }
+    /* CONTEÚDO CENTRAL */
+    .centro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-        /* -------- RESPONSIVO PARA CELULAR --------- */
-        @media (max-width: 768px) {
-            .gal {
-                font-size: 20px;
-            }
+    .botao1 {
+      background-color: #d82828;
+      color: white;
+      width: 150px;
+      height: 36px;
+      border-radius: 60px;
+      border: none;
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
 
-            .conf {
-                font-size: 16px;
-            }
+    .botao1:active {
+      transform: scale(0.9);
+    }
 
-            .logo {
-                width: 80%;
-            }
+    /* RESPONSIVO PARA CELULAR */
+    @media screen and (max-width: 850px) {
+      html, body {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
 
-            .sobre {
-                font-size: 16px;
-            }
+      body {
+        background-size: cover;
+        background-position: center;
+        background-position: 20% center;
+      }
 
-            .botao1 {
-                width: 120px;
-                height: 32px;
-                font-size: 14px;
-            }
-        }
-    </style>
+      .centro {
+        margin-top: 40px;
+      }
+
+      .logos,
+      .sobre,
+      .mim {
+        display: none;
+      }
+
+      .logo {
+        width: 260px;
+        margin-top: 20px;
+      }
+
+      .conf {
+        font-size: 20px;
+      }
+
+      .gal {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+      header{
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="redes">
-            <a href="https://www.instagram.com/lldocesgourmett/" target="_blank"><img src="instagram-new.png" alt="Instagram"></a>
-            <img src="Facebook-Logo-Black-And-White-PNG-Image-Background.png" alt="Facebook">
-            <img src="whatsapp (1).png" alt="WhatsApp">
+  <header>
+    <nav class="logos">
+      <a href="https://www.instagram.com/lldocesgourmett/" target="_blank">
+        <div class="insta">
+          <img src="instagram-new.png" alt="Instagram" width="30px" />
         </div>
+      </a>
+      <div class="face">
+        <img src="Facebook-Logo-Black-And-White-PNG-Image-Background.png" alt="Facebook" width="20px" />
+      </div>
+      <div class="zap">
+        <img src="whatsapp (1).png" alt="WhatsApp" width="25px" />
+      </div>
+    </nav>
+  </header>
 
-        <h1>L&L DOCES GOURMET</h1>
-        <h2 class="sobre">Sobre Mim <img src="Sobre Mim.png" alt="" width="20px"></h2>
-        <img src="Logo_conffeitaria-removebg-preview__1_-removebg-preview.png" alt="Logo" class="logo">
-        <h2 class="conf">Confeitaria</h2>
-        <h2 class="gal">GALERIA DE PRODUTOS</h2>
-        <button class="botao1" onclick="cardapio()">Fazer pedido</button>
-    </header>
+  <main>
+    <div class="centro">
+      <h1>L&L DOCES GOURMET</h1>
+      <h2 class="sobre">Sobre Mim</h2>
+      <img src="Sobre Mim.png" alt="Sobre Mim" width="27px" class="mim" />
+      <img src="Logo_conffeitaria-removebg-preview__1_-removebg-preview.png" alt="Logo" width="380px" class="logo" />
+      <h2 class="conf">Confeitaria</h2>
+      <h2 class="gal">GALERIA DE PRODUTOS</h2>
+      <button class="botao1" onclick="cardapio()">Fazer pedido</button>
+    </div>
+  </main>
 
-    <main>
-        <div class="imagem"><img src="Fundo Confeitaria 2 melhorado.png" alt="Fundo"></div>
-    </main>
-
-    <script>
-        function cardapio() {
-            window.location.href = "login.html";
-        }
-    </script>
+  <script>
+    function cardapio() {
+      window.location.href = "login.html";
+    }
+  </script>
 </body>
 
 </html>
