@@ -1,150 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio</title>
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Bangers&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Hammersmith+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-        .img{
-            filter: blur(20px);
-            z-index: 5;
-            margin-top: -420px;
-        }
-        .box{
-            width: 580px;
-            height: 600px;
-            background-color: rgb(255, 255, 255);
-            margin-top: -800px;
-            position: relative;
-            z-index: 20;
-            filter: blur(0px);
-            border-radius: 50px;
-            
-            
-            
-        }
-       
-            
-        
-        .p{
-            position: relative;
-            z-index: 50;
-            margin-top: 40px;
-            
-            font-size: 17px;
-            color: black;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio</title>
 
-
-            
-        }
-       
-       
-       .h21{
-        position: relative;
-        top: 20px;
-        
-       }
-
-       input{
-        height: 50px;
-        width: 510px;
-        margin-left: -5px;
-        border-radius: 12px;
-        border-width: 0.2px;
-        margin-top: 20px;
-        padding-left: 20px;
-        border: solid red;
-        border-width: 2px;
-        
-        
-        
-        
-       }
-    .h2{
-        position: relative;
-        z-index: 100;
-        color: black;
-        font-family: 'Nexa Black', sans-serif;
-        top: 35px;
-        left: -145px;
-        
-        
-    
+  <!-- Fonte Montserrat já importada no seu CSS -->
+  <style>
+    /* Reset padrão para tirar margens e paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .rec{
-        position: relative;
-        z-index: 200;
-        color: black;
-        font-family: 'Nexa Black', sans-serif;;
-        font-size: 15px;
-        top: 100px;
-        left: -80px;
-        margin-top: -80px;
-        
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Bangers&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Hammersmith+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: "Montserrat", sans-serif;
+      overflow-x: hidden;
     }
-    .put{
-        position: relative;
-        z-index: 300px;
-        margin-top: 85px;
-        
+
+    /* Imagem de fundo borrada */
+    .img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      overflow: hidden;
     }
-    .botao5{
-        position: relative;
-        z-index: 600;
-        height: 50px;
-        width: 510px;
-        margin-top: 60px;
-        left: -10px;
-        border-radius: 10px;
-        border: none;
-        background-color: rgb(184, 50, 50);
-        color: white;
-        font-size: 20px;
-        transition: all 0.2s ease;
-        cursor: pointer;
+
+    .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(20px);
     }
+
+    /* Caixa de conteúdo principal */
+    .box {
+      width: 580px;
+      height: 600px;
+      background-color: rgb(255, 255, 255);
+      margin: 50px auto;
+      position: relative;
+      z-index: 10;
+      border-radius: 50px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 100px;
+    }
+
+    /* Estilo correto para o título h1 */
+    .titulo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: #1E2530;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    /* Parágrafo */
+    .p {
+      font-size: 17px;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Outros títulos h2 */
+    .h2 h2,
+    .rec h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: black;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .h2 {
+      align-self: flex-start;
+      margin-left: 30px;
+    }
+
+    .rec {
+      align-self: flex-start;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    input {
+      height: 50px;
+      width: 510px;
+      border-radius: 12px;
+      border: 2px solid red;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .botao5 {
+      height: 50px;
+      width: 510px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(184, 50, 50);
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: 20px;
+    }
+
     .botao5:active {
-            transform: scale(0.9);
-        }
-       
-        
-    </style>
+      transform: scale(0.95);
+    }
+
+    @media (max-width: 600px) {
+      .box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        top: -4px;
+      }
+
+      input,
+      .botao5 {
+        width: 100%;
+      }
+
+      .h2,
+      .rec {
+        margin-left: 0;
+        align-self: center;
+        text-align: center;
+      }
+
+      .titulo {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    
-    
-    
-    <main>
-        <div class="img"> <img src="Fundo Confeitaria 2 melhorado.png" alt=""> </div>
-        
-    </main>
+  <div class="img">
+    <img src="Fundo Confeitaria 2 melhorado.png" alt="Fundo Borrado" />
+  </div>
 
-    <center><div class="box">
-        <div class="h21"><h1  style="font-family: 'Nexa Black', sans-serif; font-weight: 900; font-size: 2.5rem; color: #1E2530;">
-  Doce Encontro!
-</h1></div>
-        <p class="p" >Acesse um mundo de sabores e delícias. Seus <br>momentos mais doces começam aqui!</p>
-        <div class="h2"><h2 style="font-weight: 550;">Seu Primeiro Nome:</h2></div>
-        
-        <input type="text"   id="nome" placeholder="    Digite seu nome aqui" >
-        <div class="rec"><h2 style="font-weight: 600;">Telefone para Receitas Secretas:</h2></div>
-        <input type="text"  class="put"  placeholder="  Ex: (XX) XXXXX-XXXX" >
-        <button class="botao5" onclick="entrar()">Entrar para Adoçar! </button>
-    </div></center>
-    
-    
+  <main>
+    <div class="box">
+      <div class="h21">
+        <h1 class="titulo">Doce Encontro!</h1>
+      </div>
+
+      <p class="p">Acesse um mundo de sabores e delícias. <br />Seus momentos mais doces começam aqui!</p>
+
+      <div class="h2">
+        <h2>Seu Primeiro Nome:</h2>
+      </div>
+      <input type="text" id="nome" placeholder="Digite seu nome aqui" />
+
+      <div class="rec">
+        <h2>Telefone para Receitas Secretas:</h2>
+      </div>
+      <input type="text" class="put" placeholder="Ex: (XX) XXXXX-XXXX" />
+
+      <button class="botao5" onclick="entrar()">Entrar para Adoçar!</button>
+    </div>
+  </main>
+
+  <script>
+    function entrar() {
+      window.location.href = "cardapio.html";
+    }
+  </script>
 </body>
-<script>
-    function entrar(){
-    window.location.href = "cardapio.html";
-}
-    
-        
-    </script>
-    
-
 </html>
